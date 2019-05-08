@@ -61,6 +61,9 @@ public class Counter {
             }
             i++;
             lines.add(line + " " + timestamp);
+            if (i == 5){
+                throw new RuntimeException("ooops some exception just been raised");
+            }
         }
         line = "completed.....";
         System.out.println(line);
